@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src = '/../js/main.js'></script>
+     <script type="text/javascript">
+        function insert(){
+            var src = document.getElementById("whale");
+            var img = document.createElement("img");
+            img.src = "/../img/whale.png";
+            src.appendChild(img);
+        }
+     </script>
+  
+  <style>
+  
+      body {
+          background-image: url('/../img/whale.jpg');
+      }
+      
+      .talkbox {
+            width: 50%;
+            margin: 10em;
+            color: whitesmoke;
+            background-color: #05B1F3;
+            font-family: Tahoma;
+            border: 5px solid black;
+        }
+        
+  </style>
+  
+</head>
+
+    <body><center>
+        <div class = talkbox>
+             <form name =whaleform method="get" action="/" onsubmit="return false;">
+			<fieldset>
+				<label>
+	                <table>
+                    <h2>Translate to whale talk!</h2>
+                        <p><strong>Enter your text, translate it to whale, make sure you sound it out just like a whale!</strong></p>
+                        <textarea name="whaleTalk" id="whaleTalk">Enter Text To Translate Here</textarea>
+                </label>
+            </fieldset>
+            
+                <p>
+				    <input type=button name=whalebutton value="Translate" onclick="translate();">
+			    </p>
+			
+	                    <h4>In Whale Talk:</h4>
+	                    <div id = "result">
+                            <td><div id="whale">
+							<script type="text/javascript">
+								insert();
+							</script>
+							</div></td>
+	                    </div>
+	               </table>
+	        </form>
+        </div>
+    </center></body>
+</html>
